@@ -1,6 +1,6 @@
 # Tethered Precision Control (USB WebUI)
 
-![Tethered Precision Control](banner.png)
+![Tethered Precision Control](banner.jpeg)
 
 This module enables high-precision control of the robotic arm via a USB connection. A lightweight Flask web interface allows users to adjust joint angles using sliders in real-time.
 
