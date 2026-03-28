@@ -151,7 +151,7 @@ Every command sent to the ESP32 is a **7-value comma-separated string**:
 
 ## 🔌 Mode 1 — Tethered Precision Control (USB + Web UI)
 
-![Mode 1 — Tethered Precision Control](imitation-learning-robotic-arm/1.Tethered%20Precision%20Control%20%28%20USB%20-%20WEBUI%20%29/banner.png)
+![Mode 1 — Tethered Precision Control](imitation-learning-robotic-arm/1.Tethered%20Precision%20Control%20%28%20USB%20-%20WEBUI%20%29/banner.jpeg)
 
 **The entry point.** A direct, wired, no-Wi-Fi-needed control mode. The ESP32 is connected to your computer via USB. The web interface sends servo commands over the serial port at 115200 baud. Zero network setup. Zero packet loss. Maximum reliability.
 
@@ -175,7 +175,7 @@ Browser Slider → HTTP GET /ui_move → Flask → pyserial.write() → USB → 
 
 ## 📡 Mode 2 — Remote Digital Sequencing (Wi-Fi + Web UI)
 
-![Mode 2 — Remote Digital Sequencing](imitation-learning-robotic-arm/2.Remote%20Digital%20Sequencing%20%28%20WiFi%20-%20WEBUI%20%29/banner.png)
+![Mode 2 — Remote Digital Sequencing](imitation-learning-robotic-arm/2.Remote%20Digital%20Sequencing%20%28%20WiFi%20-%20WEBUI%20%29/banner.jpeg)
 
 **Go wireless.** Identical control to Mode 1 but over Wi-Fi using UDP packets. The ESP32 joins your home/lab network and Flask sends angle data as UDP datagrams to port 5005. This eliminates the USB cable, allowing the arm to be placed anywhere within network range.
 
@@ -197,7 +197,7 @@ Browser Slider → HTTP GET /ui_move → Flask → UDP socket → Wi-Fi → ESP3
 
 ## 🤖 Mode 3 — Wireless Teleoperation (Real-Time Cobot Mirror)
 
-![Mode 3 — Wireless Teleoperation](imitation-learning-robotic-arm/3.Wireless%20Teleoperation%20%28%20REALTIME%20-%20COBOT%20%29/banner.png)
+![Mode 3 — Wireless Teleoperation](imitation-learning-robotic-arm/3.Wireless%20Teleoperation%20%28%20REALTIME%20-%20COBOT%20%29/banner.jpeg)
 
 **Become the robot.** A second robotic arm — the **myCobot 280** — acts as a physical input controller. Flask reads its joint angles every 50ms via serial using the `pymycobot` library, translates them from the cobot's -90°/+90° range to the servo's 0°–180° range, and immediately fires a UDP packet to the ESP32. The target arm mirrors every physical movement of the master arm in real time.
 
@@ -227,7 +227,7 @@ servo_angle = (cobot_angle - (-90)) * (180 / 180)
 
 ## 🧠 Mode 4 — Kinesthetic Teaching (Record & Play via Cobot)
 
-![Mode 4 — Kinesthetic Teaching](imitation-learning-robotic-arm/4.Kinesthetic%20Teaching%20%28%20REC%26PLAY%20-%20COBOT%20%29/banner.png)
+![Mode 4 — Kinesthetic Teaching](imitation-learning-robotic-arm/4.Kinesthetic%20Teaching%20%28%20REC%26PLAY%20-%20COBOT%20%29/banner.jpeg)
 
 **The heart of imitation learning.** You physically pose the master arm, save that pose as a checkpoint, move to the next pose, save again — building a complete motion sequence through pure physical demonstration. Then click **Play**, and the target arm executes the entire learned sequence autonomously.
 
