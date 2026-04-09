@@ -359,7 +359,7 @@ curl -sSL [https://raw.githubusercontent.com/SadathAliRahman/imitation-learning-
 (Manual alternative: Clone repo, navigate to Imitation Learner/ArmFlow, run pip install -r requirements.txt, then python app.py
 
 ### 4. Open the Control UI
-```
+``` 
  Open browser → http://localhost:5000
 Step 1: Scan Network → Select ESP32 → Connect to Arm
 Step 2: Choose your control mode
