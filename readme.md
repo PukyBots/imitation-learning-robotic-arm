@@ -353,12 +353,12 @@ This image shows all four Step 3 control panels side-by-side, one for each mode:
 ```
 
 ### 3. Install & Run the Hub (One-Command Setup)
-```
-Open your terminal and paste this single command. It will download the project, set up an isolated Python environment, install all required dependencies, and launch the web server automatically.
-curl -sSL [https://raw.githubusercontent.com/SadathAliRahman/imitation-learning-robotic-arm/main/start.sh](https://raw.githubusercontent.com/SadathAliRahman/imitation-learning-robotic-arm/main/start.sh) | bash
 
-(Manual alternative: Clone repo, navigate to Imitation Learner/ArmFlow, run pip install -r requirements.txt, then python app.py
+Open your terminal and paste this single command. It will download the project, set up an isolated Python environment, install all required dependencies, and launch the web server automatically.
 ```
+curl -sSL https://raw.githubusercontent.com/SadathAliRahman/imitation-learning-robotic-arm/main/start.sh | bash
+```
+(Manual alternative: Clone repo, navigate to Imitation Learner/ArmFlow, run pip install -r requirements.txt, then python app.py
 ### 4. Open the Control UI
 ``` 
  Open browser → http://localhost:5000
