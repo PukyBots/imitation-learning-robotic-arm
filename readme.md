@@ -344,20 +344,21 @@ This image shows all four Step 3 control panels side-by-side, one for each mode:
 4. Upload via USB
 ```
 ### 2. Hardware Wi-Fi Setup
-
+```
 1. Power on ESP32
 2. Connect to "RoboArm_Setup" Wi-Fi
 3. Open http://192.168.4.1 → Configure WiFi
 4. Select your network, enter password, Save
 5. Reconnect your PC to your normal Wi-Fi
+```
 
-
-3. Install & Run the Hub (One-Command Setup)
+### 3. Install & Run the Hub (One-Command Setup)
+```
 Open your terminal and paste this single command. It will download the project, set up an isolated Python environment, install all required dependencies, and launch the web server automatically.
 curl -sSL [https://raw.githubusercontent.com/SadathAliRahman/imitation-learning-robotic-arm/main/start.sh](https://raw.githubusercontent.com/SadathAliRahman/imitation-learning-robotic-arm/main/start.sh) | bash
 
 (Manual alternative: Clone repo, navigate to Imitation Learner/ArmFlow, run pip install -r requirements.txt, then python app.py
-
+```
 ### 4. Open the Control UI
 ``` 
  Open browser → http://localhost:5000
